@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.rafel.gmall.manage.mapper.PmsBaseAttrInfoMapper">
+    
+    <select id="selectSaleAttrListByValueId" resultMap="selectSaleAttrListByValueIdMap">
+        SELECT
+            ba.*,ba.id as ba_id,bv.*,bv.id as bv_id
+        FROM
+            pms_base_attr_info ba,
+            pms_base_attr_value bv
+        WHERE
+            ba.id=bv.attr_id
+        and
+            bv.id in ($(valueIdStr))
+
+    </select>
+
+    <!-- mybatis 返回非单一集合，而是多层集合需要建立映射关系 -->
+    <resultMap id="selectSaleAttrListByValueIdMap" type="com.rafel.gmall.bean.PmsBaseAttrInfo" autoMapping="true">
+
+        <result column="ba_id" property="id"></result>
+
+        <collection property="attrValueList" ofType="com.rafel.gmall.bean.PmsBaseAttrValue" autoMapping="true">
+            <result column="bv_id" property="id"></result>
+        </collection>
+
+    </resultMap>
+
+</mapper>
