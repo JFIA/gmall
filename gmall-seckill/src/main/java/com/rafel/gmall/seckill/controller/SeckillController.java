@@ -22,7 +22,6 @@ public class SeckillController {
     @Autowired
     RedissonClient redissonClient;
 
-
     /***
      * 先到先得式秒杀
      * @return
