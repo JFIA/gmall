@@ -19,7 +19,6 @@ import java.util.Map;
 @Component
 public class AuthInterceptor extends HandlerInterceptorAdapter {
 
-
     // handler表示请求中代表的方法
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 

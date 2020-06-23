@@ -18,6 +18,7 @@ public class CookieUtil {
      * @param isDecoder
      * @return
      */
+
     public static String getCookieValue(HttpServletRequest request, String cookieName, boolean isDecoder) {
         Cookie[] cookies = request.getCookies();
         if (cookies == null || cookieName == null){

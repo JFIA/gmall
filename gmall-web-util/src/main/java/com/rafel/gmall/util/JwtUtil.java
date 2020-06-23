@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class JwtUtil {
 
+
     public static String encode(String key, HashMap<String, Object> param, String salt){
         if(salt!=null){
             key+=salt;
