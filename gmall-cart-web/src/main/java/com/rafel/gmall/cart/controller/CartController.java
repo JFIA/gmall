@@ -35,8 +35,8 @@ public class CartController {
 
     @RequestMapping("addToCart")
     @LoginRequired(loginSuccess = true)
-    public String addToCart(@RequestParam String skuId, @RequestParam int quantity, HttpServletRequest request, HttpServletResponse response){
-
+    public String addToCart(@RequestParam String skuId, @RequestParam int quantity, HttpServletRequest request,
+                            HttpServletResponse response){
         // 调用商品服务查询商品查询
         PmsSkuInfo pmsSkuInfo = skuService.getByskuId(skuId);
 
