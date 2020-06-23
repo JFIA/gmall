@@ -10,6 +10,7 @@ import java.io.Serializable;
  */
 public class PmsProductImage implements Serializable {
 
+
     @Column
     @Id
     private String id;

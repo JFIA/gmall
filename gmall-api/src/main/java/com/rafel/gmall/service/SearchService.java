@@ -7,5 +7,6 @@ import java.io.IOException;
 import java.util.List;
 
 public interface SearchService {
+
     List<PmsSearchSkuInfo> getList(PmsSearchParam pmsSearchParam) throws IOException;
 }

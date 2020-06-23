@@ -19,6 +19,7 @@ public class PmsSkuAttrValue implements Serializable {
     @Column
     String skuId;
 
+
     public String getId() {
         return id;
     }

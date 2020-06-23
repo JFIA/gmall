@@ -10,6 +10,7 @@ import java.util.List;
 
 public class PmsProductSaleAttr implements Serializable {
 
+
     @Id
     @Column
     String id ;

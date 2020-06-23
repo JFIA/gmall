@@ -7,7 +7,6 @@ import java.math.BigDecimal;
 public class OmsOrderItem implements Serializable {
 
     @Id
-
     private String id;
     private String orderId;
     private String orderSn;

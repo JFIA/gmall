@@ -24,6 +24,7 @@ public class PmsSkuImage implements Serializable {
     @Column
     String isDefault;
 
+
     public String getId() {
         return id;
     }

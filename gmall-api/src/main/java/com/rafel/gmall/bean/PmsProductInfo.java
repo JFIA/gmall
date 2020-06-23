@@ -14,6 +14,7 @@ import java.util.List;
 
 public class PmsProductInfo implements Serializable {
 
+
     @Column
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

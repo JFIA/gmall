@@ -3,6 +3,7 @@ package com.rafel.gmall.service;
 import com.rafel.gmall.bean.OmsOrder;
 
 public interface OrderService {
+
     String genTradeCode(String memberId);
 
     boolean checkTradeCode(String memberId,String tradeCode);

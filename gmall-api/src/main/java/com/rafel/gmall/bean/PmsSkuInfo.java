@@ -14,7 +14,6 @@ import java.util.List;
  * @return
  */
 public class PmsSkuInfo implements Serializable {
-
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column

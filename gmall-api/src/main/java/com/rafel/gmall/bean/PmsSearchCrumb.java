@@ -31,4 +31,5 @@ public class PmsSearchCrumb {
     public void setUrlParam(String urlParam) {
         this.urlParam = urlParam;
     }
+
 }

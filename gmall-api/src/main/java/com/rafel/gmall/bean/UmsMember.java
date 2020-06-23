@@ -6,6 +6,7 @@ import java.util.Date;
 
 public class UmsMember implements Serializable {
 
+
     //让通用Mapper知道id是主键。
     @Id
     private String id;

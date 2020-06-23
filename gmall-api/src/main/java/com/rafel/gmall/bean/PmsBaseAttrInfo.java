@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class PmsBaseAttrInfo implements Serializable {
 
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column

@@ -5,6 +5,7 @@ import java.io.Serializable;
 
 public class OmsCompanyAddress implements Serializable {
 
+
     @Id
     private String id;
     private String addressName;

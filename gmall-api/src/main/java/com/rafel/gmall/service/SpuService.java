@@ -7,6 +7,7 @@ import com.rafel.gmall.bean.PmsProductSaleAttr;
 import java.util.List;
 
 public interface SpuService {
+
     List<PmsProductInfo> getSpuInfo(String catalog3Id);
 
     String saveSpuInfo(PmsProductInfo pmsProductInfo);

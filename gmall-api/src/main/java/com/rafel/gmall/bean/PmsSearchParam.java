@@ -34,5 +34,4 @@ public class PmsSearchParam implements Serializable {
     public void setValueId(String[] valueId) {
         this.valueId = valueId;
     }
-
 }

@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public interface SkuService {
+
     String saveSkuInfo(PmsSkuInfo pmsSkuInfo);
 
     PmsSkuInfo getByskuId(String skuId);

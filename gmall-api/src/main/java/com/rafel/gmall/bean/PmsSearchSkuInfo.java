@@ -21,7 +21,6 @@ public class PmsSearchSkuInfo {
     private String valueId;
 
 
-
     public String getId() {
         return id;
     }

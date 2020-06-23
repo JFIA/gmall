@@ -11,6 +11,7 @@ import java.util.Date;
  */
 public class PaymentInfo {
 
+
     @Column
     @Id
     private String id;

@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 public class PmsBaseCatalog3 implements Serializable {
 
-
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)

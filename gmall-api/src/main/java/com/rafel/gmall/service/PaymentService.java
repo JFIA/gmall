@@ -5,6 +5,7 @@ import com.rafel.gmall.bean.PaymentInfo;
 import java.util.Map;
 
 public interface PaymentService {
+
     void savePaymentInfo(PaymentInfo paymentInfo);
 
     void updatePaymentInfo(PaymentInfo paymentInfo);

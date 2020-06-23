@@ -7,7 +7,6 @@ import java.util.List;
 
 
 public interface UserService {
-
     List<UmsMember> getAllUser();
 
     List<UmsMemberReceiveAddress> getReceiveAddress(String memberId);

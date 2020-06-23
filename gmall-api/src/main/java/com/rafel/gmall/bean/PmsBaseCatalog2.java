@@ -11,6 +11,7 @@ import java.util.List;
  * @return
  */
 public class PmsBaseCatalog2 implements Serializable {
+
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)

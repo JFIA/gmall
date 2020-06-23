@@ -7,6 +7,7 @@ import java.util.Date;
 
 public class OmsCartItem implements Serializable{
 
+
     @Id
     private String id;
     private String productId;

@@ -11,7 +11,6 @@ import java.util.List;
 
 public class OmsOrder implements Serializable {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;

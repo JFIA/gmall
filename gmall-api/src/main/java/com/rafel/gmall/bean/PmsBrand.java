@@ -5,6 +5,7 @@ import java.io.Serializable;
 
 public class PmsBrand  implements Serializable {
 
+
     @Id
     private String id;
     private String        name;
