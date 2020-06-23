@@ -19,21 +19,15 @@ import java.util.*;
 @Service
 public class CartServiceImpl implements CartService {
 
-
     @Autowired
     CartInfoMapper cartInfoMapper;
 
     @Autowired
     RedisUtil redisUtil;
 
-
     @Override
-
     public CartInfo ifCartExist(CartInfo cartInfo) {
-
-
         boolean ifCartExist = false;
-
 
         CartInfo info = new CartInfo();
 
@@ -47,7 +41,6 @@ public class CartServiceImpl implements CartService {
 
 
     @Override
-
     public void updateCart(CartInfo cartInfoDb) {
 
         cartInfoMapper.updateByPrimaryKeySelective(cartInfoDb);
@@ -56,7 +49,6 @@ public class CartServiceImpl implements CartService {
 
 
     @Override
-
     public void insertCart(CartInfo cartInfo) {
 
         cartInfoMapper.insertSelective(cartInfo);
@@ -65,7 +57,6 @@ public class CartServiceImpl implements CartService {
 
 
     @Override
-
     public void syncCache(String userId) {
 
         Jedis jedis = redisUtil.getJedis();
@@ -99,7 +90,6 @@ public class CartServiceImpl implements CartService {
 
 
     @Override
-
     public List<CartInfo> getCartCache(String userId) {
 
         Jedis jedis = redisUtil.getJedis();
@@ -120,15 +110,11 @@ public class CartServiceImpl implements CartService {
             }
 
         }
-
-
         return cartInfos;
-
     }
 
 
     @Override
-
     public void updateCartChecked(CartInfo cartInfo) {
 
         Example example = new Example(CartInfo.class);
@@ -145,7 +131,6 @@ public class CartServiceImpl implements CartService {
 
 
     @Override
-
     public void combineCart(List<CartInfo> cartInfos, String userId) {
 
         if (cartInfos != null) {
@@ -155,9 +140,7 @@ public class CartServiceImpl implements CartService {
                 CartInfo info = ifCartExist(cartInfo);
 
                 if (info == null) {
-
                     //插入
-
                     cartInfo.setUserId(userId);
 
                     cartInfoMapper.insertSelective(cartInfo);
@@ -207,9 +190,7 @@ public class CartServiceImpl implements CartService {
             }
 
         } else {
-
             //取数据库中数据
-
             CartInfo cartInfo = new CartInfo();
 
             cartInfo.setUserId(userId);
@@ -223,14 +204,11 @@ public class CartServiceImpl implements CartService {
         return cartInfos;
     }
     @Override
-
     public void deleteCartById(List<CartInfo> cartInfos) {
         for (CartInfo cartInfo : cartInfos) {
-
             cartInfoMapper.deleteByPrimaryKey(cartInfo);
 
         }
-
         //同步缓存
         syncCache(cartInfos.get(0).getUserId());
 
