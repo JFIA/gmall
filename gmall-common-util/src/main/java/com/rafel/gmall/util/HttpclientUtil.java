@@ -18,6 +18,7 @@ import java.util.Map;
 
 public class HttpclientUtil {
 
+
     public static String doGet(String url)   {
         // 创建Httpclient对象
         CloseableHttpClient httpclient = HttpClients.createDefault();
