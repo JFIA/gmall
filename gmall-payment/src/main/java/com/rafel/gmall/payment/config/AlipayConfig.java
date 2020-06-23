@@ -11,6 +11,7 @@ import org.springframework.context.annotation.PropertySource;
  * @return
  */
 
+
 // 配置类作用是读取支付的配置属性，创建配置bean
 @Configuration
 @PropertySource("classpath:alipay.properties")
