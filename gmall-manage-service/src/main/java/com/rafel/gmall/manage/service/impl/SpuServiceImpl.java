@@ -30,7 +30,6 @@ public class SpuServiceImpl implements SpuService {
     PmsProductImageMapper pmsProductImageMapper;
 
 
-
     @Override
     public List<PmsProductInfo> getSpuInfo(String catalog3Id) {
 

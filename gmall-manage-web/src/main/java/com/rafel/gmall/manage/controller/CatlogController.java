@@ -29,6 +29,7 @@ public class CatlogController{
         return catalog1s;
     }
 
+
     @RequestMapping("getCatalog2")
     @ResponseBody
     public List<PmsBaseCatalog2> getCatalog2(@RequestParam String catalog1Id){

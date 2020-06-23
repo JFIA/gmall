@@ -28,6 +28,7 @@ public class AttrServiceImpl implements AttrService {
     @Autowired
     PmsBaseSaleAttrMapper pmsBaseSaleAttrMapper;
 
+
     @Override
     public List<PmsBaseAttrInfo> getAttrInfo(String catalog3Id) {
 

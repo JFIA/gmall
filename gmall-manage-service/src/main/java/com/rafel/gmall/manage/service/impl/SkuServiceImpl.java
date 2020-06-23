@@ -40,6 +40,7 @@ public class SkuServiceImpl implements SkuService {
     @Autowired
     RedisUtil redisUtil;
 
+
     @Override
     public String saveSkuInfo(PmsSkuInfo pmsSkuInfo) {
 

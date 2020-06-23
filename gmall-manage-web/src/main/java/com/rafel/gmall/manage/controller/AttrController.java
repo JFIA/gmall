@@ -28,6 +28,7 @@ public class AttrController {
         return pmsBaseAttrInfos;
     }
 
+
     @RequestMapping("saveAttrInfo")
     @ResponseBody
     public String saveAttrInfo(@RequestBody PmsBaseAttrInfo pmsBaseAttrInfo){
