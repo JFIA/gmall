@@ -12,6 +12,7 @@ import javax.jms.Session;
 @Configuration
 public class ActiveMQConfig {
 
+
     @Value("${spring.activemq.broker-url:disabled}")
     String brokerURL;
 

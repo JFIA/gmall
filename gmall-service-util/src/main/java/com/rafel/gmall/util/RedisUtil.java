@@ -8,6 +8,7 @@ public class RedisUtil {
 
     private JedisPool jedisPool;
 
+
     public void initPool(String host,int port ,int database){
         JedisPoolConfig poolConfig = new JedisPoolConfig();
         poolConfig.setMaxTotal(200);
