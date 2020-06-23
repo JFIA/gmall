@@ -7,6 +7,7 @@ import javax.persistence.Id;
 public class UmsMemberReceiveAddress {
 
     @Id
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     private String memberId;

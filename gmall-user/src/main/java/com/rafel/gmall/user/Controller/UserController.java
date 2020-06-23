@@ -28,6 +28,7 @@ public class UserController {
         return umsMember;
     }
 
+
     @RequestMapping("getAddress")
     @ResponseBody
     public List<UmsMemberReceiveAddress> getReceiveAdressById(@RequestParam String MemberId){

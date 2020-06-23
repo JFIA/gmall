@@ -7,6 +7,7 @@ import java.util.Date;
 
 public class UmsMember {
 
+
     //让通用Mapper知道id是主键。
     @Id
     //主键返回策略。
