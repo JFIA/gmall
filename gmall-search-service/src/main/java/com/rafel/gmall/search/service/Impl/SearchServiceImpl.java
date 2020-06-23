@@ -24,6 +24,7 @@ import java.util.Map;
 @Service
 public class SearchServiceImpl implements SearchService {
 
+
     @Autowired
     JestClient jestClient;
 
